@@ -3,7 +3,12 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:netflix_app/core/constants.dart';
 
 class AppBarWidget extends StatelessWidget {
-  const AppBarWidget({super.key});
+  const AppBarWidget({
+    Key? key,
+    required this.title,
+  }) : super(key: key);
+
+  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -11,14 +16,14 @@ class AppBarWidget extends StatelessWidget {
       children: [
         kWidth,
         Text(
-          'Downloads',
-          style: TextStyle(
+          title,
+          style: const TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.bold,
           ),
         ),
-        Spacer(),
-        Icon(
+        const Spacer(),
+        const Icon(
           Icons.cast,
           color: Colors.white,
         ),

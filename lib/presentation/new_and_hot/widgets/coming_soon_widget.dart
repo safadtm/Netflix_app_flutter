@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_app/core/colors/colors.dart';
 import 'package:netflix_app/core/constants.dart';
+import 'package:netflix_app/presentation/search/widgets/search_result.dart';
 import 'package:netflix_app/presentation/widgets/video_widget.dart';
 import 'package:netflix_app/presentation/widgets/custom_button_widget.dart';
 
@@ -48,6 +49,7 @@ class ComingSoonWidget extends StatelessWidget {
             children: [
               const VideoWidget(),
               Row(
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   const Text(
                     "TALL GITLS 2",

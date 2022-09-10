@@ -12,6 +12,7 @@ const kHeight20 = SizedBox(
 
 //BorderRadius
 final BorderRadius kRaduis10 = BorderRadius.circular(10);
+final BorderRadius kRaduis30 = BorderRadius.circular(30);
 //imageUrl
 const kMainImage =
     'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/nEufeZlyAOLqO2brrs0yeF1lgXO.jpg';
